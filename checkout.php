@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Checkout - Hue U Xchange</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -24,4 +24,26 @@
       <h1>Initiation Form</h1>
       <p class="tagline">You are one step away from becoming a Certified Light Carrier.</p>
 
-      <form action="confi
+      <form action="confirm.php" method="POST">
+        <label>
+          Name: <input type="text" name="name" required />
+        </label><br /><br />
+        <label>
+          Email: <input type="email" name="email" required />
+        </label><br /><br />
+        <label>
+          Energy Signature:
+          <select name="signature" required>
+            <option value="Flame">Flame</option>
+            <option value="Wave">Wave</option>
+            <option value="Stone">Stone</option>
+          </select>
+        </label><br /><br />
+        <button type="submit">Complete Initiation</button>
+      </form>
+
+    </section>
+  </main>
+
+</body>
+</html>
